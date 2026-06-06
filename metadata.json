@@ -1,0 +1,8 @@
+{
+  "name": "Multiproyectos S.A.S",
+  "description": "Sitio web de diseño y construcción",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
