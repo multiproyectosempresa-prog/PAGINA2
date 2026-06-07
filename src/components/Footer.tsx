@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, MapPin, HardHat } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
@@ -35,11 +36,11 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold font-heading mb-6">Enlaces Rápidos</h4>
             <ul className="space-y-4">
-              <li><a href="#home" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Inicio</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Nosotros</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Servicios</a></li>
-              <li><a href="#portfolio" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Proyectos</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Contacto</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Inicio</Link></li>
+              <li><Link to="/nosotros" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Nosotros</Link></li>
+              <li><Link to="/servicios" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Servicios</Link></li>
+              <li><Link to="/proyectos" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Proyectos</Link></li>
+              <li><Link to="/contacto" className="text-gray-400 hover:text-brand-accent font-medium transition-colors">Contacto</Link></li>
             </ul>
           </div>
 

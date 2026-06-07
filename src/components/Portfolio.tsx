@@ -22,8 +22,131 @@ export function Portfolio() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-100">
+        <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-100 mb-16">
           <img src="/ALGUNOSTRABAJOS.png" alt="Algunos de nuestros trabajos" className="w-full h-auto object-cover" />
+        </div>
+
+        {/* Canva Embed Projects */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              PROPUESTA DE DISEÑO EDIFICIO EL BOLIVAR BARRIO EL BOSQUE MUNICIPAL- B/TURA
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAHI5yQoqck/UBTdLPHpAJ4tW9tc3pz0jg/view?embed" 
+                allowFullScreen={true}
+                title="PROPUESTA DE DISEÑO EDIFICIO EL BOLIVAR BARRIO EL BOSQUE MUNICIPAL- B/TURA"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAHI5yQoqck/UBTdLPHpAJ4tW9tc3pz0jg/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              MODELO DE CASA
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl bg-gray-100" style={{ paddingTop: '75%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAHK4BNJs1A/xWmmx7aF6-wadbMm8es7wQ/watch?embed" 
+                allowFullScreen={true}
+                title="MODELO DE CASA"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAHK4BNJs1A/xWmmx7aF6-wadbMm8es7wQ/watch" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              PROPUESTA DE DISEÑO CONDOMINIO FORESTAL SUN
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAHE5iXKGtI/b-_p4iLqbwI5qKGVn_WEAg/view?embed" 
+                allowFullScreen={true}
+                title="PROPUESTA DE DISEÑO CONDOMINIO FORESTAL SUN"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAHE5iXKGtI/b-_p4iLqbwI5qKGVn_WEAg/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              IGLESIA LUCIANA
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAHIqg6ESgo/kSEGTFDzmnL7uHTV3bGaYQ/view?embed" 
+                allowFullScreen={true}
+                title="IGLESIA LUCIANA"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAHIqg6ESgo/kSEGTFDzmnL7uHTV3bGaYQ/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              PROPUESTA DE DISEÑO EDIFICIO EL BOLIVAR PROPUESTA PRIMER PISO
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAHC0JOWkmI/Y4HtiHGa7Su4zy41mxOG4Q/view?embed" 
+                allowFullScreen={true}
+                title="PROPUESTA DE DISEÑO EDIFICIO EL BOLIVAR PROPUESTA PRIMER PISO"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAHC0JOWkmI/Y4HtiHGa7Su4zy41mxOG4Q/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h4 className="text-lg md:text-xl font-bold text-center text-brand-primary mb-6 font-heading min-h-[80px] flex items-center justify-center">
+              PROPUESTA DE DISEÑO VIVENDA MIXTA EL CERRITO VALLE CALLE 4a 6-32 BARRIO LA ESTRELLA
+            </h4>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                loading="lazy" 
+                className="absolute top-0 left-0 w-full h-full border-none" 
+                src="https://www.canva.com/design/DAGWSUtrWXg/KpfSQt2JESjOybi1jCua3w/view?embed" 
+                allowFullScreen={true}
+                title="DISEÑO CERRITO VALLE"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center mt-auto pt-6">
+               <a href="https://www.canva.com/design/DAGWSUtrWXg/KpfSQt2JESjOybi1jCua3w/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-brand-primary/90 transition-colors w-full justify-center">
+                 Abrir presentación completa
+               </a>
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>

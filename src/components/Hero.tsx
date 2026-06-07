@@ -1,4 +1,5 @@
 import { HeroAnimation } from './HeroAnimation';
+import { Link } from 'react-router-dom';
 
 export function Hero() {
   return (
@@ -37,18 +38,18 @@ export function Hero() {
 
         {/* Buttons Section */}
         <div className="flex flex-col sm:flex-row gap-5 mb-16">
-          <a
-            href="#contact"
+          <Link
+            to="/cotizar"
             className="inline-flex justify-center items-center px-8 py-4 bg-brand-accent text-white font-bold rounded-sm hover:bg-brand-accent-hover transition-colors text-lg shadow-lg hover:-translate-y-0.5 duration-200"
           >
             Cotizar Ahora
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            to="/servicios"
             className="inline-flex justify-center items-center px-8 py-4 border-2 border-white/80 bg-white/5 text-white font-bold rounded-sm hover:bg-white hover:text-brand-primary transition-colors text-lg backdrop-blur-sm shadow-lg hover:-translate-y-0.5 duration-200"
           >
             Ver Servicios
-          </a>
+          </Link>
         </div>
 
         <div className="w-full max-w-4xl flex justify-center pb-8 mt-auto">

@@ -1,15 +1,16 @@
 import { Menu, X, HardHat } from 'lucide-react';
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Inicio', href: '#home' },
-    { name: 'Nosotros', href: '#about' },
-    { name: 'Servicios', href: '#services' },
-    { name: 'Proyectos', href: '#portfolio' },
-    { name: 'Contacto', href: '#contact' },
+    { name: 'Inicio', href: '/' },
+    { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Servicios', href: '/servicios' },
+    { name: 'Proyectos', href: '/proyectos' },
+    { name: 'Contacto', href: '/contacto' },
   ];
 
   return (
@@ -17,28 +18,32 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <a href="#home" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <img src="/LOGOM.png" alt="Multiproyectos Logo" className="h-12 w-auto object-contain" />
               <div className="flex flex-col">
                 <span className="font-heading font-black text-[13px] tracking-tight leading-none text-brand-primary">MULTIPROYECTOS</span>
                 <span className="text-[11px] text-gray-500 font-bold tracking-widest mt-1 uppercase">S.A.S.</span>
               </div>
-            </a>
+            </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             {links.map((link) => (
-              <a
+              <NavLink
                 key={link.name}
-                href={link.href}
-                className="text-gray-600 hover:text-brand-accent px-3 py-2 text-sm font-semibold transition-colors uppercase tracking-wide"
+                to={link.href}
+                className={({ isActive }) => 
+                  `px-3 py-2 text-sm font-semibold transition-colors uppercase tracking-wide ${
+                    isActive ? 'text-brand-accent' : 'text-gray-600 hover:text-brand-accent'
+                  }`
+                }
               >
                 {link.name}
-              </a>
+              </NavLink>
             ))}
-            <a href="#contact" className="ml-4 px-6 py-2.5 bg-brand-accent text-white font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-brand-accent-hover transition-colors">
+            <Link to="/cotizar" className="ml-4 px-6 py-2.5 bg-brand-accent text-white font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-brand-accent-hover transition-colors">
               Cotizar
-            </a>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -56,22 +61,26 @@ export function Navbar() {
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-4 pt-2 pb-4 space-y-1 shadow-lg">
             {links.map((link) => (
-              <a
+              <NavLink
                 key={link.name}
-                href={link.href}
-                className="block px-3 py-3 text-base font-semibold text-gray-700 hover:text-brand-accent hover:bg-gray-50 uppercase tracking-wide rounded-md"
+                to={link.href}
+                className={({ isActive }) => 
+                  `block px-3 py-3 text-base font-semibold uppercase tracking-wide rounded-md ${
+                    isActive ? 'text-brand-accent bg-gray-50' : 'text-gray-700 hover:text-brand-accent hover:bg-gray-50'
+                  }`
+                }
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </a>
+              </NavLink>
             ))}
-             <a
-                href="#contact"
+             <Link
+                to="/cotizar"
                 className="block w-full text-center mt-4 px-3 py-3 text-base font-bold text-white bg-brand-accent hover:bg-brand-accent-hover uppercase tracking-wide rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Cotizar Ahora
-              </a>
+              </Link>
           </div>
         </div>
       )}
