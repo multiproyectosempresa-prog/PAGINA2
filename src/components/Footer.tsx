@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, MapPin, HardHat } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, MapPin, HardHat } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -21,14 +21,17 @@ export function Footer() {
               Desarrollamos soluciones integrales en construcción e ingeniería, ofreciendo servicios de alta calidad con experiencia, responsabilidad y compromiso.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a href="https://www.facebook.com/Multiproyectossas/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a href="https://www.instagram.com/multiproyectosempresa2026/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
+              <a href="https://www.linkedin.com/in/multiproyectos-sas-b467a72b8/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://www.youtube.com/@multiproyectossas9286" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-brand-accent transition-colors">
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

@@ -24,7 +24,7 @@ export function Clients() {
 
         <div className="flex justify-center mt-12 bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm overflow-hidden">
           <img 
-            src="/2ALIADOM.png" 
+            src="/logos-clientes.jpeg" 
             alt="Nuestros Clientes" 
             className="w-full max-w-5xl h-auto object-contain drop-shadow-sm"
             style={{ 

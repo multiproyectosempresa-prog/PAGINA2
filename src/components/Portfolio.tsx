@@ -23,7 +23,7 @@ export function Portfolio() {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-100 mb-16">
-          <img src="/ALGUNOSTRABAJOS.png" alt="Algunos de nuestros trabajos" className="w-full h-auto object-cover" />
+          <img src="/BANNER-DOS.png" alt="Algunos de nuestros trabajos" className="w-full h-auto object-cover" />
         </div>
 
         {/* Canva Embed Projects */}
